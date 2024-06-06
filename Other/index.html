@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĂN ÍT NO LÂU KHÔNG LO BÉO XẤU</title>
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/Resposive.css">
+    <script src="../lib/bootstrap.js"></script>
+    <script src="../lib/font-fontawesome-ae333ffef2.js"></script>
+    <!--Khai báo AnglularJs-->
+    <script src="../lib/angular.js"></script>
+    <script src="../lib/angular-route.js"></script>
+
+    <!--Khởi tạo ng-app-->
+    <!--Khởi tạo ng-app trước mới nhúng các file js vào-->
+
+    <script>
+        // khởi tạo ng-app
+        var app = angular.module('myApp', ['ngRoute']);
+        // khai báo router
+        app.config(function($routeProvider){
+            $routeProvider
+            .when("/home",{
+                templatUrl:"./index.html",
+            })
+            .when("/trangChu",{
+                templateUrl:"./trangChu.html",
+                controller:"ListSanPhamCtrl"
+            })
+            .when("/Danh-Sach-San-Pham",{
+                templateUrl:"./SanPham.html",
+                controller:"ListSanPhamCtrl"
+            })
+            .when("/Chi-tiet-san-pham/:id",{
+                templateUrl:"./spct.html",
+                controller:"ChiTietSanPhamCtrl"
+            })
+            .when("/Dang-ki-tai-khoan",{
+                templateUrl:"./Register.html",
+                controller:"RegisterCtrl"
+            })
+            .when("/Dang-nhap",{
+                templateUrl:"./Login.html",
+                controller:"LoginController"
+            })
+            .when("/Gio-hang",{
+                templateUrl:"./GioHang.html",
+                controller:"CartCtrl"
+            })
+            .when("/Quan-li-san-pham",{
+                templateUrl:"./QuanLiSanPham.html",
+                controller:"QuanLiSanPhamCtrl"
+            }).when("/Them-san-pham",{
+                templateUrl:"./Js/QuanLiSanPham/AddSanPham.html",
+                controller:"createSpCtrl"
+            })
+            .when("/Sua-san-pham/:id",{
+                templateUrl:"./Js/QuanLiSanPham/UpdateSanPham.html",
+                controller:"UpdateSanPham"
+            })
+            
+            .when("/Quan-li-danh-muc-san-pham",{
+                templateUrl:"./QuanLiDanhMucSP.html",
+                controller:"QuanLiDanhMucSPCtrl"
+            })
+            .when("/Them-danh-muc-san-pham",{
+                templateUrl:"./Js/QuanLiDanhMucSp/AddDanhMucSanPham.html",
+                controller:"createDMSPCtrl"
+            })
+            .when("/Sua-danh-muc-san-pham/:id",{
+                templateUrl:"./Js/QuanLiDanhMucSp/UpdateDanhMucSp.html",
+                controller:"updateDMSPCtrl"
+            })
+
+            .when("/Quan-li-don-hang",{
+                templateUrl:"./QuanLiDonHang.html",
+                controller:"QuanLiDonHangCtrl"
+            })
+            .when("/Chi-tiet-don-hang/:id",{
+                templateUrl:"./Js/QuanLiDonHang/ChiTietDonHang.html",
+                controller:"ChiTietDonHangCtrl"
+            })
+            .when("/Xac-nhan-san-pham",{
+                templateUrl:"./XacNhanSp.html",
+                controller:"xacnhanSanPhamCtrl"
+            })
+
+            app.run(function($rootScope, $location) {
+      $rootScope.loginSuccess = true; // Đặt loginSuccess thành true
+    });
+
+        })
+    </script>
+
+    <script src="./Js/listSp.js"></script>
+    <script src="./Js/spct.js"></script>
+    <script src="./Js/Register.js"></script>
+    <script src="./Js/Login.js"></script>
+    <script src="./Js/GioHang.js"></script>
+    <script src="./Js/QuanLiSanPham/quanLiSanPham.js"></script>
+    <script src="./Js/QuanLiSanPham/AddSanPham.js"></script>
+    <script src="./Js/QuanLiSanPham/UpdateSanPham.js"></script>
+    <script src="./Js/QuanLiDanhMucSp/quanLiDanhMucSP.js"></script>
+    <script src="./Js/QuanLiDanhMucSp/AddDanhMucSp.js"></script>
+    <script src="./Js/QuanLiDanhMucSp/UpdateDanhMucSp.js"></script>
+    <script src="./Js/QuanLiDonHang/quanLiDonHang.js"></script>
+    <script src="./Js/QuanLiDonHang/ChiTietDonHang.js"></script>
+    <script src="./Js/XacNhanSp.js"></script>
+</head>
+<body ng-app="myApp">
+    <div class="container-fluid ">
+        <!--Header-->
+        <div class="bg-success">
+            <div class="d-flex justify-content-around">
+                <div class="Sloga">
+                    <span class="text-light Sloga">ĂN ÍT NO LÂU KHÔNG LO BÉO XẤU</span>
+                </div>
+                <div class="chinhSach">
+                    <span class="text-light chinhSach">Chính sách bảo mật |
+                        <i class="fa-solid fa-envelope"></i>
+                        maianh2004@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <header class="d-flex justify-content-around bg-success p-2 text-white bg-opacity-75">
+            <div class="d-flex justify-content-between">
+                <div class="">
+                    <img src="../Image/logo2.png" width="95px" alt="">
+                </div>
+                <div class="pt-4 title">
+                    <h5 class="text-light fs-4 ">ĂN NGON - DÁNG THON</h5>
+                </div>
+                <div class="pt-4 ps-5 position-relative input-search">
+                    <input type="text" class="rounded-2 border-0" style="width: 550px; height: 35px;"
+                        placeholder="Tìm kiếm" ng-model="stringSearch">
+                    <button class="position-absolute end-0 border-0" style="background-color: #fff;">
+                        <i class="fa-solid fa-magnifying-glass fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="d-flex pt-4">
+                <div class="pe-3 ps-3 pt-2 iconsearch">
+                    <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                </div>
+                <div>
+                    <button class="btn position-relative">
+                        <a href="#!Gio-hang"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #fff;" ></i></a>
+                        <span
+                            class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger">{{totalQuantity}}</span>
+                    </button>
+                </div>
+                <div class="pe-3 ps-3">
+                    <i class="fa-solid fa-heart fa-2xl"></i>
+                </div>
+                <div class="me-3" ng-if="AC === undefined ">
+                    <a href="#!Dang-nhap"><i class="fa-solid fa-user fa-2xl" style="color: #fff;"></i> </a>
+                </div>
+                <div class="me-3" ng-if="AC != undefined ">
+                   <span>Hi!{{AC.ten}}</span>
+                </div>
+                <div class="me-3" ng-if="AC != undefined ">
+                    <a href="#!Dang-nhap" class="text-light">Đăng xuất</a>
+                </div>
+            </div>
+
+        </header>
+        <!--Navbar-->
+        <nav class="pt-3 row">
+            <ul class="d-flex justify-content-center ">
+                <li style="list-style-type: none; padding: 0 20px;"><a href="#!trangChu" class="text-decoration-none col-4">
+                        <i class="fa-solid fa-house fa-xl text-success"></i>
+                    </a>
+                </li>
+                <li style="list-style-type: none; margin: 0 10px; ">
+                    <a href="#!Danh-Sach-San-Pham" class="text-decoration-none border border-success-subtle text-success title-sp col-4"
+                        style="min-height: 32px; padding:4px 5px ; margin: 2px;" title="Tất cả sản phẩm" class="all">
+                        Tất cả sản phẩm
+                    </a>
+                </li>
+                <li style="list-style-type: none; margin: 0 10px; " ng-show="AC.chucVu === admin" ng-hide="AC === undefined ">
+                    <a href="#!Quan-li-danh-muc-san-pham" class="text-decoration-none border border-success-subtle text-success title-sp col-4"
+                        style="min-height: 32px; padding:4px 5px ; margin: 2px;" title=" Quản lý danh mục sản phẩm " class="all">
+                        Quản lý danh mục sản phẩm 
+                    </a>
+                </li>
+              <li style="list-style-type: none; margin: 0 10px; " ng-show="AC.chucVu === admin" ng-hide="AC === undefined">
+                    <a href="#!Quan-li-san-pham" class="text-decoration-none border border-success-subtle text-success title-sp col-4"
+                        style="min-height: 32px; padding:4px 5px ; margin: 2px;" title=" Quản lý sản phẩm " class="all">
+                        Quản lý sản phẩm 
+                    </a>
+                </li>
+                <li style="list-style-type: none; margin: 0 10px; "ng-show="AC.chucVu === admin" ng-hide="AC === undefined ">
+                    <a href="#!Quan-li-don-hang" class="text-decoration-none border border-success-subtle text-success title-sp col-4"
+                        style="min-height: 32px; padding:4px 5px ; margin: 2px;" title=" Quản lý đơn hàng" class="all">
+                        Quản lý đơn hàng
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+     
+    </div>
+    <div class="container" >
+        <div ng-view>
+
+        </div>
+    </div>
+
+        <!--Footer-->
+
+        <div class="container-fluid">
+        <footer class="bg-success p-0 mt-5 footer-for-PC"style="height: 350px;">
+            <div class=" row ms-5">
+                <div class="col-lg-3 col-md-3 col-sm">
+                    <h5 class="text-light text-uppercase fw-bold">Về chúng tôi</h5>
+                    <span class="text-light">Chúng tôi - Healthy Food luôn hướng tới sức khỏe, sự an tâm khi sử dụng sản phẩm tới với khách hàng</span>
+                    <div>
+                     <img src="../Image/footer_logobct_img.webp" width="150px" alt="">
+                     <br>
+                    <img src="../Image/dmca-badge-w250-2x1-04.png" width="150px" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm">
+                   <ul class="text-light">
+                    <li style="list-style: none;">
+                        <b>Địa chỉ: </b>
+                        Số 141B Nguyễn Ngọc Nại , Khương Mai , Thanh Xuân, Hà Nội
+                    </li>
+                    <li style="list-style: none;">
+                        <b>Số điện thoại: </b>
+                        0916495666
+                    </li>
+                    <li style="list-style: none;">
+                        <b>Email: </b>
+                        dacsanmoc.vn@gmail.com
+                    </li>
+                   </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm">
+                    <h5 class="text-light text-uppercase fw-bold">Hỗ trợ khách hàng</h5>
+                      
+                    <ul class="text-light">
+                     <li>
+                        Tìm kiếm
+                     </li>
+                     <li >
+                         Giới thiệu
+                     </li>
+                     <li>
+                         Chính sách đổi trả
+                     </li>
+
+                     <li>
+                        Chính sách bảo mật
+                    </li>
+                    <li>
+                       Điều khoản dịch vụ
+                    </li>
+                    <li>
+                        Bảo mật
+                    </li>
+
+
+                    </ul>
+                 </div>
+ 
+                 <div class="col-lg-3 col-md-3 col-sm">
+                    <h5 class="text-light text-uppercase fw-bold">Chăm sóc khách hàng</h5>
+                    <span class="text-light"><i class="fa-solid fa-phone fa-lg"></i> 0916495666</span>
+                    <br>
+                    <span class="text-light"><i class="fa-solid fa-envelope fa-lg"></i>
+                        dacsanmoc.vn@gmail.com</span>
+                        <br>
+                    <div class="text-light">
+                        <h5 class="text-light text-uppercase pt-3">Theo dõi tôi</h5>
+                        <i class="fa-brands fa-facebook fa-lg"></i>
+                        <i class="fa-brands fa-twitter fa-lg"></i>
+                        <i class="fa-brands fa-youtube fa-lg"></i>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <!--Footer khi ở Mobile-->
+
+        <footer class="footer-for-mobile bg-success p-0 mt-5">
+            <div class="content">
+                <h5 class="text-light text-uppercase ">Bán hàng 7:30 - 21:30</h5>
+                <span class="text-light"><i class="fa-solid fa-phone fa-lg"></i> 0916495666</span>
+            </div>
+            <div>
+                <h5 class="text-light text-uppercase ">Khiến nại 8:30 - 21:30</h5>
+                <span class="text-light"><i class="fa-solid fa-phone fa-lg"></i> 0916495666</span>
+            </div>
+            
+        </footer>
+
+
+    </div>
+   
+       
+   
+</body>
+
+</html>

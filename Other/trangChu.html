@@ -1,0 +1,378 @@
+        <!--Content-->
+
+        <!-- Slide Show-->
+        <div class="container">
+            <div id="slide-show" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="../img-Slider/traicay.jfif" class="d-block w-100" alt="Hoa quả sấy">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="../img-Slider/bkeo.jfif" class="d-block w-100" alt="Bánh kẹo healthy">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#slide-show" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slide-show" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+            <!--Information-->
+            <div class="mt-5">
+                <div class="d-flex justify-content-center Information">
+                    <div>
+                        <img src="../img-content/hat-dinh-duong-lala-nuts.jpg" width="100%" alt="Hạt dinh dưỡng">
+                    </div>
+                    <div class=" pt-5 content-information">
+                        <span>
+                            Với sự tự hào mang đến những sản phẩm tự nhiên 100% healthy được làm từ các nguyên liệu tươi
+                            ngon nhất và chọn lọc kỹ lưỡng với tiêu chuẩn thuần organic mang trọn tinh tuý từ mẹ thiên
+                            nhiên
+                            để luôn mang lại những giá trị tốt nhất cho khách hàng trên hành trình kiểm soát cân nặng,
+                            ăn
+                            kiêng lành mạnh và cải thiện vẻ đẹp từ trong ra ngoài….
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Danh mục sản phẩm-->
+
+            <div class="mt-5 danhMuc">
+                <div class="text-center text-success pb-5">
+                    <H2 class="text-uppercase">Danh mục sản phẩm</H2>
+                </div>
+                <div class="row" >
+                    <div class="col-lg col-md col-sm-3" ng-repeat="sp in danhSachDanhMuc">
+                        <div class="pt-3 text-uppercase text-center" style="width: 50%;">
+                            <img src="{{sp.anh}}" width="90px" height="90px"
+                                style="object-fit: cover;" class="rounded-pill">
+                            <H5 class="pt-2">{{sp.ten}}</H5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sản phẩm bán chạy-->
+            <div class="container mt-5" id="spbc">
+                <div class="text-center text-success pb-5">
+                    <H2 class="text-uppercase">Sản phẩm bán chạy</H2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spbc/Banana-Say.png" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-50%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Chuối sấy giòn 500g</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">100.000</span>
+                                <span class="text-danger text-decoration-line-through">200.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spbc/ComChay.png" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-12%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Thanh cơm cháy gạo lứt</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">149.000</span>
+                                <span class="text-danger text-decoration-line-through">169.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spbc/HatDieu.jpg" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-50%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Hạt điều rang muối</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">145.000</span>
+                                <span class="text-danger text-decoration-line-through">200.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spbc/HoaquaSay.png" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-31%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Thập cẩm sấy 500g</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">129.000</span>
+                                <span class="text-danger text-decoration-line-through">89.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--Sản phẩm mới nhất-->
+            <div class="container mt-5" id="spmn">
+                <div class="text-center text-success pb-5">
+                    <H2 class="text-uppercase">Sản phẩm mới nhất</H2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spmn/hat-chia-den-uc.jpg" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-15%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Hạt Chia Đen Úc Black Bag</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">80.000</span>
+                                <span class="text-danger text-decoration-line-through">100.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spmn/gaoLut.jpg" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-50%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Gạo lứt rong biển 500g</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">150.000</span>
+                                <span class="text-danger text-decoration-line-through">300.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spmn/banhNgoi.png" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-8%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Bánh ngói hạnh nhân</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">219.000</span>
+                                <span class="text-danger text-decoration-line-through">239.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spmn/MuoiHong.jpg" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-50%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Muối hồng 500g</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">20.000</span>
+                                <span class="text-danger text-decoration-line-through">40.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spmn/banhBiscotti.jpg" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-50%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Bánh Biscotti</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">100.000</span>
+                                <span class="text-danger text-decoration-line-through">200.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spmn/hat-macca-daklak-3.jpg" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-10%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Hạt Macca Đắk Lắk</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">300.000</span>
+                                <span class="text-danger text-decoration-line-through">339.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spmn/comChay.png" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-50%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Thanh cơm cháy gạo lứt</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">100.000</span>
+                                <span class="text-danger text-decoration-line-through">200.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class=" ratio-16x9 position-relative">
+                            <div>
+                                <img src="../img-spmn/bunGaoLut.jpg" class="mw-100 mh-100 hover-zoom">
+                            </div>
+                            <span
+                                class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                style="width: 40px; height: 40px;">-48%</span>
+                        </div>
+                        <!--Hiển thị text và button-->
+                        <div class="p-4">
+                            <H5 class="text-center">Bún gạo nứt</H5>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-danger fw-bold ">25.000</span>
+                                <span class="text-danger text-decoration-line-through">48.000</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--Tư vấn-->
+            <div class="container mt-5">
+                <div class="text-center text-success pb-5">
+                    <H2 class="text-uppercase">YÊU CẦU TƯ VẤN</H2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-3">
+                        <div>
+                            <span class="fst-italic text-success fs-5">Chúng tôi luôn nỗ lực mang đến cho khách hàng
+                                những
+                                sản phẩm chất lượng và dịch vụ chăm sóc khách hàng tận tâm nhất!</span>
+                        </div>
+                        <div>
+                            <img src="../Image/tuVan.png" width="100%" height="300px" alt="" class="pt-3">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="" class="form-label fw-bold">Họ và tên</label>
+                                <input type="text" class="form-control" id="exampleInputFullName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label fw-bold">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label fw-bold">Số điện thoại</label>
+                                <input type="text" class="form-control" id="exampleInputNumberPhone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label fw-bold">Nội dung(Không bắt buộc)</label>
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success text-center">Gửi</button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+

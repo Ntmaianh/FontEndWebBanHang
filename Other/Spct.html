@@ -1,0 +1,80 @@
+        <!--Content-->
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <div>
+                           <img src="{{sanpham.anh}}" width="95%" alt="">
+                        </div>
+                        <div class="pt-3">
+                            <img src="{{sanpham.anh}}" alt="" width="20%">
+                            <img src="{{sanpham.anh1}}" width="20%" alt="">
+                            <img src="{{sanpham.anh2}}" width="20%" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex justify-content-center flex-column">
+                    <H5 class="fw-bold fs-2">{{sanpham.ten}}</H5>
+                    <div class="d-flex">
+                        <span class="text-danger fw-bold pe-2 fs-5">{{sanpham.giaBan}}</span>
+                        <span class="text-danger text-decoration-line-through ps-2 fs-5">{{sanpham.giaNiemYet}}</span>
+                    </div>
+                    <span class="fs-5"><b>Tên sản phẩm:</b>{{sanpham.ten}}</span>
+                    <br>
+                    <span class="fs-5"><b>Khối lượng tịnh:</b>{{sanpham.khoiLuong}}</span>
+                    <br>
+                    <span class="fs-5"><b>Thành phần:</b>{{sanpham.thanhphan}}</span>
+                    <br>
+                    <span class="fs-5"><b>Hướng dẫn bảo quản:</b>{{sanpham.huongdanbaoquan}}</span>
+                    <br>
+                    <span class="fs-5"><b>Hạn sử dụng:</b>{{sanpham.hansudung}}</span>
+                    <br>
+                    <span class="fs-5"><b>Cảnh báo an toàn:</b>{{sanpham.CanhBaoAnToan}}</span>
+                    <br>
+                    <span class="fs-5"><b>Số TCB:</b>{{sanpham.SoTCB}}</span>
+                    <br>
+                    <span class="fs-5"><b>Đạt tiêu chuẩn ISO:</b>{{sanpham.TieuChuan}}</span>
+                    <br>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination d-flex">
+                            <li class="page-item">
+                                <a class="page-link text-success" aria-label="Previous">
+                                    <i class="fa-solid fa-plus fa-xs"></i>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link text-success" href="#">1</a></li>
+
+                            <li class="page-item">
+                                <a class="page-link text-success" aria-label="Next">
+                                    <span> - </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <br>
+                    <div>
+                        <a href="./XacNhanSp.html"><button class="btn btn-success">Mua ngay</button></a>
+                        <button class="btn btn-success">Thêm vào giỏ hàng</button>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="border-top">
+                    <span class=" pt-1">{{sanpham.tenDanhMuc}}</span>
+                    </div>
+                    <br>
+                    <div>
+                        <i class="fa-brands fa-facebook fa-lg"></i>
+                        <i class="fa-brands fa-twitter fa-lg"></i>
+                        <i class="fa-solid fa-envelope fa-lg"></i>
+                        <i class="fa-brands fa-pinterest fa-lg"></i>
+                        <i class="fa-brands fa-linkedin fa-lg"></i>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

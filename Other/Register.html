@@ -1,0 +1,50 @@
+<body>
+    <div class="container d-flex justify-content-center" style="height: 100%;">
+        <div style="width: 50%; margin-top: 200px;">
+            <form class="pb-2 bg-success bg-opacity-75 ">
+                <H3 class="text-center pt-3 text-light">Đăng kí</H3>
+                <div class="mb-3 pe-3 pt-3 ps-3">
+                    <input type="text" class="form-control" id="FisrtNameInput" aria-describedby="emailHelp"
+                        placeholder="Họ" required ng-model="User.ho">
+                </div>
+                <div class="mb-3 pe-3 pt-3 ps-3">
+                    <input type="text" class="form-control" id="LastNameInput" aria-describedby="emailHelp"
+                        placeholder="Tên" required ng-model="User.ten">
+                </div>
+                <div class="mb-3 pe-3 pt-3 ps-3">
+                   <select name="" id="" class="form-control" ng-model="User.gioiTinh">
+                    <option value="">Giới tính</option>
+                    <option value="Nữ">Nữ</option>
+                    <option value="Nam">Nam</option>
+                   </select>
+                </div>
+                <div class="mb-3 pe-3 pt-3 ps-3">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Email" required ng-model="User.email">
+                </div>
+                <div class="mb-3  pe-3 pt-3 ps-3">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu"
+                        required ng-model="User.matKhau">
+                </div>
+
+                <div class="mb-3 pe-3 pt-3 ps-3">
+                    <select name="" id="" class="form-control" ng-model="User.chucVu">
+                     <option value="">Chức vụ</option>
+                     <option value="admin">Admin</option>
+                     <option value="khachhang">Khách hàng</option>
+                    </select>
+                 </div>
+                 <div ng-if="formInValid" class="text-danger">
+                    {{formInValidMessage}}
+                </div>
+                <div class="pe-3 pt-3 ps-3">
+                    <button type="submit" class="btn btn-success " ng-click="DangKi()">Đăng kí</button>
+                </div>
+                <br>
+                <a href="#!Dang-nhap" class="pe-3 ps-3 text-light" >Đăng nhập</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

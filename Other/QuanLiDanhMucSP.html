@@ -1,0 +1,51 @@
+        <!--Content-->
+            <div class="container d-flex justify-content-end mt-3">
+                <button class="btn btn-success"><a href="#!Them-danh-muc-san-pham" class="text-decoration-none text-light">Thêm danh mục sản phẩm</a></button>
+            </div>
+            <div class="container mt-5">
+                <H3 class="text-center fw-bold pb-2"> Danh mục sản phẩm</H3>
+                <table class="table table-striped">
+                    <thead>
+                        <td style=" text-align: center; ">Tên danh mục</td>
+                        <td style=" text-align: center">Số lượng sản phẩm</td>
+                        <td style=" text-align: center;">Thao tác</td>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="dm in danhSachDanhMuc">
+                            <td class="text-center">{{dm.ten}}</td>
+                            <td class="text-center">{{dm.slsp}}</td>
+                            <td class="text-center">
+                                <div>
+                                    <button class="btn btn-success" ><a href="#!Sua-danh-muc-san-pham/{{dm.id}}" class="text-decoration-none text-light">Sửa</a></button>
+                                    <button class="btn btn-success" ng-click="DeleteDMSanPham(dm.id)">Xóa</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                                    <!--Phân trang-->     
+          <nav aria-label="Page navigation example">
+            <ul class="pagination d-flex justify-content-center">
+              <li class="page-item">
+                <a class="page-link text-success" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link text-success"href="#">1</a></li>
+              <li class="page-item"><a class="page-link text-success" href="#">2</a></li>
+              <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link text-success" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            
+           

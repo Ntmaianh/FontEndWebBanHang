@@ -1,0 +1,42 @@
+<H1 class="text-center">Sửa thông tin sản phẩm</H1>
+<form>
+    <div class="mb-3">
+        <label for="exampleInputFullName" class="form-label">Id</label>
+        <input type="text" class="form-control" id="exampleInputFullName" ng-model="sanPham.id">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputFullName" class="form-label">Tên sản phẩm</label>
+        <input type="text" class="form-control" id="exampleInputFullName" ng-model="sanPham.ten">
+    </div>
+    <div class="mb-3">
+        <select class="form-select" aria-label="Loại sản phẩm" ng-model="sanPham.tenDanhMuc">
+            <option value="">Loại sản phẩm</option>
+            <option value="Hạt dinh dưỡng">Hạt dinh dưỡng</option>
+            <option value="Bánh dinh dưỡng">Bánh dinh dưỡng</option>
+            <option value="Gạo nứt">Gạo lứt</option>
+            <option value="Granola">Granola</option>
+            <option value="Hoa quả sấy">Hoa quả sấy</option>
+          </select>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPrice" class="form-label">Giá niêm yết</label>
+        <input type="text" class="form-control" id="exampleInputPrice" ng-model="sanPham.giaNiemYet">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPrice" class="form-label">Giảm giá</label>
+        <input type="text" class="form-control" id="exampleInputPrice" ng-model="sanPham.sale">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputAddress" class="form-label">Thành phần</label>
+        <textarea name="" id="exampleInputAddress" class="form-control" ng-model="sanPham.thanhphan"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputAddress" class="form-label">Khối lượng</label>
+        <input type="text" class="form-control" class="form-control" ng-model="sanPham.khoiLuong"></textarea>
+    </div>
+    <div ng-if="formInValid" class="text-danger">
+        {{formInValidMessage}}
+    </div>
+        <a href="#!Quan-li-san-pham" class="btn btn-secondary">Quay lại</a>
+        <button type="button" class="btn btn-success" ng-click="UpdateSanPham()">Lưu thay đổi</button>
+</form>

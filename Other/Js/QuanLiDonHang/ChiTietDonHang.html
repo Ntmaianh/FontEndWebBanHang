@@ -1,0 +1,26 @@
+<table class="table" style="width: 85%;">
+    <thead>
+        <tr>
+            <th scope="col">Tên khách hàng</th>
+            <th scope="col">danh sách sản phẩm</th>
+            <th scope="col">Số lượng</th>
+            <th scope="col">Tổng tiền</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <th scope="row">
+               <span aria-disabled="true">{{donHang.tenKhachHang}}</span>
+            </th>
+            <td>
+                    <ul class="pagination d-flex" ng-repeat="sp in donHang.TenSanphamMua">
+                        <li class="page-item">
+                           <span  aria-disabled="true">{{sp}}</span>
+                        </li>
+                    </ul>
+            </td>
+            <td  aria-disabled="true">{{donHang.soLuongSanPhamMua}}</td>
+            <td  aria-disabled="true">{{donHang.TongTien}}</td>
+        </tr>
+    </tbody>
+</table>

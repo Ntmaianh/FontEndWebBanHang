@@ -1,0 +1,278 @@
+{
+  "Nguoi-dung": [
+    {
+      "id": "1",
+      "ho": "Nguyễn",
+      "ten": "Mai Anh",
+      "gioiTinh": "Nữ",
+      "email": "maianh@gmail.com",
+      "chucVu": "admin",
+      "matKhau": "admin"
+    },
+    {
+      "id": "2",
+      "ho": "Nguyễn",
+      "ten": "Anh",
+      "gioiTinh": "Nữ",
+      "email": "anh@gmail.com",
+      "chucVu": "khachhang",
+      "matKhau": "anh123"
+    }
+  ],
+  "danh-muc": [
+    {
+      "id": "DM01",
+      "ten": "Bánh dinh dưỡng",
+      "anh": "../img-danhmuc/banh-dinh-duong-1.jpg",
+      "slsp": "20"
+    },
+    {
+      "id": "DM02",
+      "ten": "Gạo nứt",
+      "anh": "../img-danhmuc/gao-lut-1.jpg",
+      "slsp": "3"
+    },
+    {
+      "id": "DM03",
+      "ten": "Granola",
+      "anh": "../img-danhmuc/granola.jpg",
+      "slsp": "10"
+    },
+    {
+      "id": "DM04",
+      "ten": "Hạt dinh dưỡng",
+      "anh": "../img-danhmuc/hat-dinh-duong-2.jpg",
+      "slsp": "5"
+    },
+    {
+      "id": "DM05",
+      "ten": "Hoa quả sấy",
+      "anh": "../img-danhmuc/hoa-qua-say.jpg",
+      "slsp": "20"
+    }
+  ],
+  "san-pham": [
+    {
+      "id": "SP01",
+      "ten": "Chuối sấy giòn 500g",
+      "anh": "/img-spbc/Banana-Say.png",
+      "anh1": "/img-spct/chuoiSay1.jpg",
+      "anh2": "/img-spct/chuoiSay2.jpg",
+      "giaBan": 100000,
+      "giaNiemYet": 200000,
+      "sale": "50%",
+      "tenDanhMuc": "Hoa quả sấy",
+      "idDanhMuc": "DM05",
+      "khoiLuong": "500g",
+      "thanhphan": "Chuối 98%, dầu thực vật (dầu cọ, dầu nành, dầu gạo, dầu dừa, dầu hướng dương)",
+      "huongdanbaoquan": "Nơi khô ráo thoáng mát, giữ kín sau khi sử dụng",
+      "hansudung": "6 tháng",
+      "CanhBaoAnToan": " Không dùng khi sản phẩm hết hạn",
+      "SoTCB": "10/DINHNAM/2019",
+      "TieuChuan": "22000-2018 – HACCP"
+    },
+    {
+      "id": "SP08",
+      "ten": "Muối hồng 500g",
+      "anh": "/img-spmn/MuoiHong.jpg",
+      "anh1": "/img-spct/muoiHong1.jpg",
+      "anh2": "/img-spct/muoiHong2.jpg",
+      "giaBan": 20000,
+      "giaNiemYet": 40000,
+      "sale": "50%",
+      "tenDanhMuc": "Gạo nứt",
+      "idDanhMuc": "DM02",
+      "khoiLuong": "50g",
+      "thanhphan": "Muối tự nhiên , chất tạo màu",
+      "huongdanbaoquan": "Nơi khô ráo thoáng mát, giữ kín sau khi sử dụng",
+      "hansudung": "6 tháng",
+      "CanhBaoAnToan": " Không dùng khi sản phẩm hết hạn",
+      "SoTCB": "10/DINHNAM/2019",
+      "TieuChuan": "22000-2018 – HACCP"
+    },
+    {
+      "id": "SP03",
+      "ten": "Hạt điều rang muối",
+      "anh": "/img-spbc/HatDieu.jpg",
+      "anh1": "/img-spct/hatDieu1.jpg",
+      "anh2": "/img-spct/HatDieu2.jpg",
+      "giaBan": 145000,
+      "giaNiemYet": 200000,
+      "sale": "50%",
+      "tenDanhMuc": "Hạt dinh dưỡng",
+      "idDanhMuc": "DM04",
+      "khoiLuong": "500g",
+      "thanhphan": "100% Hạt điều rang muối – Nguyên hạt, còn vỏ lụa size A Cồ.",
+      "huongdanbaoquan": "Nơi khô ráo thoáng mát, giữ kín sau khi sử dụng",
+      "hansudung": "6 tháng",
+      "CanhBaoAnToan": " Không dùng khi sản phẩm hết hạn",
+      "SoTCB": "10/DINHNAM/2019",
+      "TieuChuan": "22000-2018 – HACCP"
+    },
+    {
+      "id": "SP05",
+      "ten": "Hạt Chia Đen Úc Black Bag",
+      "anh": "/img-spmn/hat-chia-den-uc.jpg",
+      "anh1": "/img-spct/hatChia1.jpg",
+      "anh2": "/img-spct/hatChia2.jpg",
+      "giaBan": 80000,
+      "giaNiemYet": 100000,
+      "sale": "15%",
+      "tenDanhMuc": "Hạt dinh dưỡng",
+      "idDanhMuc": "DM04",
+      "khoiLuong": "450g",
+      "thanhphan": "100% hạt chia được trồng tại Uc",
+      "huongdanbaoquan": "Nơi khô ráo thoáng mát, giữ kín sau khi sử dụng",
+      "hansudung": "6 tháng",
+      "CanhBaoAnToan": " Không dùng khi sản phẩm hết hạn",
+      "SoTCB": "10/DINHNAM/2019",
+      "TieuChuan": "22000-2018 – HACCP"
+    },
+    {
+      "id": "SP06",
+      "ten": "Gạo lứt rong biển 500g",
+      "anh": "/img-spmn/gaoLut.jpg",
+      "anh1": "/img-spct/gaoLut1.jpg",
+      "anh2": "/img-spct/gaoLut2.jpg",
+      "giaBan": 150000,
+      "giaNiemYet": 300000,
+      "sale": "50%",
+      "tenDanhMuc": "Bánh dinh dưỡng",
+      "idDanhMuc": "DM01",
+      "khoiLuong": "500g",
+      "thanhphan": "100% OGANIC",
+      "huongdanbaoquan": "Nơi khô ráo thoáng mát, giữ kín sau khi sử dụng",
+      "hansudung": "6 tháng",
+      "CanhBaoAnToan": " Không dùng khi sản phẩm hết hạn",
+      "SoTCB": "10/DINHNAM/2019",
+      "TieuChuan": "22000-2018 – HACCP"
+    },
+    {
+      "id": "SP07",
+      "ten": "Bánh ngói hạnh nhân",
+      "anh": "/img-spmn/banhNgoi.png",
+      "anh1": "/img-spct/banhNgoi1.png",
+      "anh2": "/img-spct/banhNgoi1.png",
+      "giaBan": 219000,
+      "giaNiemYet": 239000,
+      "sale": "8%",
+      "tenDanhMuc": "Bánh dinh dưỡng",
+      "idDanhMuc": "DM01",
+      "khoiLuong": "500g",
+      "thanhphan": "hạnh nhân lát, bột hạnh nhân, đường kiêng, lòng trắng trứng",
+      "huongdanbaoquan": "Nơi khô ráo thoáng mát, giữ kín sau khi sử dụng",
+      "hansudung": "6 tháng",
+      "CanhBaoAnToan": " Không dùng khi sản phẩm hết hạn",
+      "SoTCB": "10/DINHNAM/2019",
+      "TieuChuan": "22000-2018 – HACCP"
+    },
+    {
+      "id": "SP02",
+      "ten": "Thanh cơm cháy gạo lứt",
+      "anh": "/img-spbc/ComChay.png",
+      "anh1": "/img-spct/ComChayGaoLut1.png",
+      "anh2": "/img-spct/ComChayGaoLut2.png",
+      "giaBan": 149000,
+      "giaNiemYet": 169000,
+      "sale": "12%",
+      "tenDanhMuc": "Bánh dinh dưỡng",
+      "idDanhMuc": "DM01",
+      "khoiLuong": "500g",
+      "thanhphan": "Gạo lứt 40%, hạt điều 20%, hạt hạnh nhân 10%, hạt bí 10%, glucose syrup (từ bắp), muối",
+      "huongdanbaoquan": "Nơi khô ráo thoáng mát, giữ kín sau khi sử dụng",
+      "hansudung": "6 tháng",
+      "CanhBaoAnToan": " Không dùng khi sản phẩm hết hạn",
+      "SoTCB": "10/DINHNAM/2019",
+      "TieuChuan": "22000-2018 – HACCP"
+    }
+  ],
+  "hoa-don": [
+    {
+      "maHD": "HD1",
+      "idNguoidung": 1,
+      "tenKhachHang": "Nguyễn Văn A",
+      "thoiGianMuan": "29/01/2023",
+      "soLuongSanPhamMua": 2,
+      "TenSanphamMua": [
+        "Gạo lứt rong biển 500g",
+        "Muối hồng 500g"
+      ],
+      "TongTien": 170000,
+      "id": "497e"
+    },
+    {
+      "0": {
+        "MaHĐ1": "HĐ3",
+        "TenSanphamMua": "Chuối sấy giòn 500g",
+        "anh": "/img-spbc/Banana-Say.png",
+        "soLuong": 1,
+        "MaNguoiDung": "1",
+        "tenKhachHang": "Nguyễn Văn C"
+      },
+      "id": "5bda"
+    }
+  ],
+  "SanPhamOrder": [
+    {
+      "TenSp": "Chuối sấy giòn 500g",
+      "anh": "/img-spbc/Banana-Say.png",
+      "soLuong": 1,
+      "MaNguoiDung": "1",
+      "giaBan": 100000,
+      "giaNiemYet": 200000,
+      "id": "c0c4"
+    }
+  ],
+  "GioHang": [
+    {
+      "id": "2",
+      "maSp": "SP01",
+      "TenSp": "Chuối sấy giòn 500g",
+      "anh": "/img-spbc/Banana-Say.png",
+      "soLuong": 1,
+      "MaNguoiDung": "1",
+      "giaBan": 100000,
+      "giaNiemYet": 200000
+    },
+    {
+      "id": "cf8c",
+      "maSp": "SP06",
+      "TenSp": "Gạo lứt rong biển 500g",
+      "anh": "/img-spmn/gaoLut.jpg",
+      "soLuong": 1,
+      "MaNguoiDung": "1",
+      "giaBan": 150000,
+      "giaNiemYet": 300000
+    },
+    {
+      "id": "1512",
+      "maSp": "SP01",
+      "TenSp": "Chuối sấy giòn 500g",
+      "anh": "/img-spbc/Banana-Say.png",
+      "soLuong": 1,
+      "MaNguoiDung": "1",
+      "giaBan": 100000,
+      "giaNiemYet": 200000
+    },
+    {
+      "id": "5a0b",
+      "maSp": "SP08",
+      "TenSp": "Muối hồng 500g",
+      "anh": "/img-spmn/MuoiHong.jpg",
+      "soLuong": 1,
+      "MaNguoiDung": "1",
+      "giaBan": 20000,
+      "giaNiemYet": 40000
+    },
+    {
+      "id": "fff5",
+      "maSp": "SP01",
+      "TenSp": "Chuối sấy giòn 500g",
+      "anh": "/img-spbc/Banana-Say.png",
+      "soLuong": 1,
+      "MaNguoiDung": "1",
+      "giaBan": 100000,
+      "giaNiemYet": 200000
+    }
+  ]
+}

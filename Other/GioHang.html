@@ -1,0 +1,55 @@
+        <div class="container mt-2">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Sản phẩm</th>
+                    <th scope="col" >Đơn Giá</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col">Số Tiền</th>
+                    <th scope="col" class="text-center" style="width: 20%;">Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr ng-repeat="sp in danhSachSanPham">
+                    <td scope="row" style="width: 20%;">
+                        <img src="{{sp.anh}}" width="30%" alt="">
+                    </td>
+                    <td>
+                        <div class="d-flex text-center">
+                            <span class="text-black fw-bold pe-2">{{sp.giaBan}}</span>
+                            <span class="text-black text-decoration-line-through ps-2">{{sp.giaNiemYet}}</span>
+                        </div>
+                    </td>
+                    <td>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination d-flex">
+                                <li class="page-item">
+                                    <a class="page-link text-success" aria-label="Previous">
+                                        <i class="fa-solid fa-plus fa-xs" ng-click="addSl()"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link text-success">{{sp.soLuong}}</a></li>
+    
+                                <li class="page-item">
+                                    <a class="page-link text-success" aria-label="Next">
+                                        <span ng-click="XoaSl()"> - </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </td>
+                    <td>{{Total}}</td>
+                    <td>
+                        <div class="d-flex justify-content-between" >
+                            <button class="btn btn-success" style="width: 30%; height: 35px;" ng-click="DeleteSanPham(sp.id)">Xóa</button>
+                            <a href="#!Xac-nhan-san-pham" style="width: 55%; height: 35px;" class="btn btn-success text-light"> Mua hàng </a>
+                           
+                        </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+       
+
+       

@@ -1,0 +1,68 @@
+        <!--Content-->
+        <div class="d-flex">
+            <!--Khu vực menu trái-->
+            <div style="width: 250px; height: calc(100vh - 80px);" class=" pt-4 px-2">
+                <h5 class="fw-bold">DANH MỤC SẢN PHẨM</h5>
+                <ul class="nav flex-column" ng-repeat="dm in danhSachDanhMuc" >
+                    <li class="nav-item border-bottom fs-5 dmsp"  ng-click="OnClick(dm.id)">
+                     {{dm.ten}}
+                    </li>
+                </ul>
+            </div>
+            <!--Khu vực nội dung chính-->
+            <div class="pt-4" style="width: calc(100% - 250px);">
+                <div class="container">
+                    <div class="row" >
+                        <div class="col-lg-3 col-md-3 col-sm-3" ng-repeat="sp in danhSachSanPham = (stringSearch ? (danhSachSanPham | filter:stringSearch) : danhSachSanPham)">
+                            <div class=" ratio-16x9 position-relative">
+                                <a href="#!Chi-tiet-san-pham/{{sp.id}}">
+                                    <img src="{{sp.anh}}" class="mw-100 mh-100 hover-zoom">
+                                </a>
+                                <span
+                                    class="text-bg-danger text-light rounded-pill position-absolute top-0 start-0 fs-6 d-flex align-items-center"
+                                    style="width: 40px; height: 40px;">{{sp.sale}}</span>
+                            </div>
+                            <!--Hiển thị text và button-->
+                            <div class="p-4">
+                                <H5 class="text-center">{{sp.ten}}</H5>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-danger fw-bold ">{{sp.giaBan}}</span>
+                                    <span class="text-danger text-decoration-line-through">{{sp.giaNiemYet}}</span>
+                                </div>
+                                <button class="btn btn-outline-success rounded-pill w-100" ng-click="themVaoGioHang(sp.id)">Mua ngay</button>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                     <!--Phân trang-->     
+          <nav aria-label="Page navigation example">
+            <ul class="pagination d-flex justify-content-center">
+              <li class="page-item">
+                <a class="page-link text-success" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link text-success"href="#">1</a></li>
+              <li class="page-item"><a class="page-link text-success" href="#">2</a></li>
+              <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link text-success" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        <!--Footer-->
+
+
+ 
+
+    </div>
+</body>
+
+</html>

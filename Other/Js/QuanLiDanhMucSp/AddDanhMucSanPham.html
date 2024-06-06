@@ -1,0 +1,21 @@
+<H1 class="text-center">Thêm danh mục sản phẩm</H1>
+<form class=" p-3">
+    <div class="mb-3">
+        <label for="exampleInputFullName" class="form-label">ID danh mục</label>
+        <input type="text" class="form-control" id="exampleInputFullName" ng-model="danhMucSanPham.id">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputFullName" class="form-label">Tên danh mục</label>
+        <input type="text" class="form-control" id="exampleInputFullName" ng-model="danhMucSanPham.ten">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPhoneNumber" class="form-label">Số lượng sản phẩm trong danh mục</label>
+        <input type="text" class="form-control" id="exampleInputPhoneNumber" ng-model="danhMucSanPham.slsp">
+    </div>
+    <div ng-if="formInValid" class="text-danger">
+        {{formInValidMassager}}
+    </div>
+    <div class="mb-3">
+        <button type="button" class="btn btn-success" ng-click="addDMSP()">Thêm</button>
+    </div>
+</form>

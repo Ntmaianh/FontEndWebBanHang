@@ -1,0 +1,80 @@
+/*Resposive*/
+/*Resposive PC*/
+@media (min-width: 1024px) {
+ 
+}
+/*Resposive tablet and mobile*/
+
+@media (max-width: 1023px) {
+    .main {
+        overflow: hidden;
+    }
+    /*Header*/ 
+    .chinhSach {
+        display: none;
+    }
+    .Sloga {
+        text-align: center;
+    }
+    .title {
+        display: none;
+    }
+    .input-search {
+        display: none;
+    }
+    .iconsearch {
+        display: block;
+    }
+    /*Nav*/
+    .title-sp {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 94px;
+        height: 20px;
+        font-size: 12px;
+    }
+   
+    /*Content*/
+    .Information {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content-information {
+        margin-left: 0;
+        width: 100%;
+    }
+  
+    /*Footer Trang chủ*/
+
+    .footer-for-PC {
+        display: none;
+    }
+    .footer-for-mobile {
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*Gio hàng*/
+   
+}
+
+/*Resposive Mobile*/
+
+@media (max-width: 739px) { 
+   
+     /*Content*/
+    .danhMuc {
+        display: none;
+    }
+   .footer-for-mobile H5 {
+    font-weight: normal;
+    font-size: 15px;
+   }
+    
+}
+
